@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Архітектурний конкурс для студентів</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1570129477492-45c003edd2be') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.2em;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .btn {
+      display: inline-block;
+      background: #007BFF;
+      color: white;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    form input[type="file"] {
+      padding: 5px;
+    }
+    form button {
+      background: #28a745;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      color: white;
+    }
+    .social a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 1.2em;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Архітектурний Конкурс 2025</h1>
+    <p>Для студентів архітектурних факультетів з усього світу</p>
+    <a class="btn" href="#details">Дізнатись більше</a>
+  </header>
+
+  <section id="details">
+    <h2>Про конкурс</h2>
+    <p>Запрошуємо студентів до участі в щорічному архітектурному конкурсі. Представ свої ідеї, покажи бачення майбутнього архітектури та виграй призи!</p>
+    
+    <h3>Умови участі:</h3>
+    <ul>
+      <li>Учасник має бути студентом УКД</li>
+      <li>Один або командний проєкт</li>
+      <li>Формат подачі: PDF, до 10 сторінок</li>
+    </ul>
+
+    <h3>Ключові дати:</h3>
+    <p><strong>Подача заявок:</strong> до 15 червня 2025</p>
+    <p><strong>Оголошення переможців:</strong> 30 червня 2025</p>
+
+    <a class="btn" href="#form">Подати заявку</a>
+  </section>
+
+  <section id="form">
+    <h2>Форма заявки</h2>
+    <form enctype="multipart/form-data">
+      <input type="text" placeholder="Ім’я та прізвище" required>
+      <input type="email" placeholder="Email" required>
+      <input type="text" placeholder="Університет" required>
+      <textarea placeholder="Короткий опис проєкту (до 500 символів)" rows="5" required></textarea>
+      <label>Завантажити проєкт (PDF):</label>
+      <input type="file" accept=".pdf" required>
+      <button type="submit">Надіслати заявку</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Архітектурний Конкурс. Всі права захищені.</p>
+    <div class="social">
+      <a href="https://t.me/your_telegram" target="_blank">Telegram</a> |
+      <a href="https://instagram.com/your_instagram" target="_blank">Instagram</a>
+    </div>
+  </footer>
+
+</body>
+</html>
